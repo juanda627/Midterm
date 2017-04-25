@@ -1,0 +1,17 @@
+create table employees(
+Employee_id number(6) not null,
+First_Name varchar2(20 byte) not null,
+Last_Name varchar2(25 byte) not null,
+Email varchar2(25 byte),
+Phone_Number varchar2(20 byte),
+Hire_date DATE,
+Job_Id varchar2(10 byte),
+Salary Number(8,2),
+Comission_PST number(2,2),
+Manager_Id Number(6),
+Department_Id Number(4))
+
+
+create Index
+Employees select ( Employee_Id, First_name, Last_Name)
+Where Salary_Number >= 10000
